@@ -1,0 +1,56 @@
+$backgroundHeader: #7D9174;
+$backgroundLi: #C4C4C4;
+
+.headerContainer {
+    width: 100%;
+    height: 184px;
+    flex-shrink: 0;
+    background-color: $backgroundHeader;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    li {
+        cursor: pointer;
+        width: 168px;
+        height: 64px;
+        flex-shrink: 0;
+        color: $backgroundLi;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        transition: 1s;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+@media(max-width:1130px) {
+
+    .headerContainer {
+        li {
+            width: 130px;
+        }
+    }
+}
+
+@media(max-width:980px) {
+
+    .headerContainer {
+        justify-content: flex-start;
+        flex-direction: column;
+        overflow: auto;
+
+        li {
+            width: 100px;
+        }
+    }
+}

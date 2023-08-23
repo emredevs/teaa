@@ -1,0 +1,45 @@
+.headerContainer {
+  width: 100%;
+  height: 184px;
+  flex-shrink: 0;
+  background-color: #7D9174;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.headerContainer li {
+  cursor: pointer;
+  width: 168px;
+  height: 64px;
+  flex-shrink: 0;
+  color: #C4C4C4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 1s;
+}
+.headerContainer li:hover {
+  color: black;
+}
+
+@media (max-width: 1130px) {
+  .headerContainer li {
+    width: 130px;
+  }
+}
+@media (max-width: 980px) {
+  .headerContainer {
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: auto;
+  }
+  .headerContainer li {
+    width: 100px;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,82 @@
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  margin: 70px auto 0 auto;
+}
+.contactContainer .contactInfo {
+  width: 20%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 60px;
+}
+.contactContainer .contactInfo .socialIcon {
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+}
+.contactContainer .contactInfo .socialIcon img {
+  cursor: pointer;
+}
+.contactContainer .contactInput {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.contactContainer .contactInput input {
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+}
+.contactContainer .contactInput textarea {
+  width: 100%;
+}
+.contactContainer .contactInput button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #7D9174;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 256px;
+  height: 67px;
+  font-family: Futura;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+.contactContainer .contactInput button:hover {
+  background-color: #000000;
+  color: #7D9174;
+}
+
+@media (max-width: 850px) {
+  .contactContainer {
+    gap: 30px;
+    margin: 10px;
+  }
+  .contactContainer .contactInfo {
+    width: 40%;
+  }
+  .contactContainer .contactInput {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .contactContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contactContainer .contactInfo {
+    width: 90%;
+  }
+  .contactContainer .contactInput {
+    width: 90%;
+  }
+}/*# sourceMappingURL=styles.module.css.map */
